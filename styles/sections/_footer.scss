@@ -1,0 +1,28 @@
+footer {
+    @import "./mixinsVariables";
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 70px 300px 70px 60px;
+    background-color: $bgColor;
+    border-radius: 0 50px 0 0;
+
+    > p {
+        @include bigTxt;
+    }
+    .btns{
+        display: flex;
+        gap: 20px;
+        > a {
+            padding: 10px 20px;
+            background-color: #4B4B4B;
+            color: white;
+        }
+        > a:nth-child(2) {
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #000;
+        }
+    }
+    
+}

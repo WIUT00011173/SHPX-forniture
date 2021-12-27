@@ -1,0 +1,39 @@
+.section3{
+    @import "./mixinsVariables";
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+    > img {
+        align-self: flex-start;
+        height: 700px;
+        width: 800px;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        > span {
+            @include bigTxt;
+        }
+        > p{
+            @include smlTxt;
+            width: 352px;
+        }
+        .nextPreviousBtn {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            > img:nth-child(1){
+                opacity: .5;
+            }
+            > img{
+                padding: 20px 15px;
+                background-color: $bgColor;
+            }
+        }
+    }
+}

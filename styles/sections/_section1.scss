@@ -1,0 +1,52 @@
+.section-1{
+    @import "./mixinsVariables";
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 100px;
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+           @include bigTxt();
+        }
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+    > img{
+        display: flex;
+        align-self: flex-end;
+    }
+    .info{
+        position: absolute;
+        left: 80px;
+        bottom: -100px;
+        padding: 60px;
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        
+        > p:nth-child(1) {
+            @include bigTxt;
+        }
+        > p:nth-child(2) {
+            @include smlTxt;
+        }
+    }
+}

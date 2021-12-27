@@ -1,0 +1,61 @@
+.section2 {
+    @import "./mixinsVariables";
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+
+    span {
+        @include bigTxt;
+    }
+
+    nav{
+        display: flex;
+        align-self: center;
+        gap: 40px;
+    }
+
+    .products{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        .firstRow, .secondRow{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            > div{
+                position: relative;
+                background-color: $bgColor;
+                padding: 40px;
+                border-radius: 0 0  0 50px;
+                height: 420px;
+                width: 366px;
+                transition: .3s;
+                &:hover {
+                    border-radius: 0 50px 0 0;
+
+                }
+
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    > p:nth-child(1) {
+                        @include bigTxt(30px);
+                    }
+                    > p:nth-child(2) {
+                        @include smlTxt;
+                    }
+                }
+                > img {
+                    position: absolute;
+                    bottom: -40px;
+                }
+            }
+        }
+    }
+}

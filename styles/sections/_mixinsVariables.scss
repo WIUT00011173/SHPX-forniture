@@ -1,0 +1,20 @@
+$bgColor: #FAF4EF;
+
+
+@mixin bigTxt($fsize: 50px) {
+    font-family: 'DM Serif Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $fsize;
+    line-height: 100%;
+    color: #4B4B4B;
+};
+
+@mixin smlTxt {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;    
+    line-height: 120%;
+    color: #737373;
+};
