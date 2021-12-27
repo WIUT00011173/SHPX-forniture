@@ -5,4 +5,4 @@
 
     You can find deployed website below:
 
-    
+    https://shpx-forniture.netlify.app/
